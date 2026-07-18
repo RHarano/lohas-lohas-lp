@@ -774,3 +774,21 @@ a{color:inherit;text-decoration:none}
   .legal-dl > div{grid-template-columns:1fr;gap:6px;padding:16px 4px}
   .legal{padding-bottom:72px}
 }
+
+/* =================== 会員規約 =================== */
+.legal-date{margin-top:30px;padding-top:20px;border-top:1px solid var(--line);font-size:.82rem;color:var(--muted);text-align:right}
+.kiyaku-toc{background:var(--cream-2);border:1px solid var(--line);border-radius:var(--radius);padding:30px 32px;margin-bottom:56px}
+.kiyaku-toc-title{font-family:var(--serif);font-size:1.05rem;font-weight:600;margin-bottom:16px}
+.kiyaku-toc ol{list-style:none;columns:2;column-gap:32px}
+.kiyaku-toc li{break-inside:avoid;margin-bottom:9px}
+.kiyaku-toc a{font-size:.85rem;color:var(--ink-soft);transition:.3s}
+.kiyaku-toc a:hover{color:var(--hot);text-decoration:underline}
+.kiyaku-art{margin-bottom:40px;scroll-margin-top:100px}
+.kiyaku-art h3{font-family:var(--serif);font-size:1.12rem;font-weight:600;margin-bottom:14px;line-height:1.6}
+.kiyaku-art h3 span{display:inline-block;background:var(--sage-deep);color:var(--cream);font-family:var(--sans);font-size:.72rem;font-weight:700;padding:4px 12px;border-radius:999px;margin-right:12px;vertical-align:.18em;letter-spacing:.04em}
+.kiyaku-art p{font-size:.92rem;color:var(--ink-soft);line-height:2.15;margin-bottom:8px}
+.kiyaku-facility{font-weight:700;color:var(--sage-deep)!important;margin-top:14px}
+@media(max-width:640px){
+  .kiyaku-toc{padding:24px 20px}
+  .kiyaku-toc ol{columns:1}
+}
