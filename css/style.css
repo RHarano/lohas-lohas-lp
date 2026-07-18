@@ -647,3 +647,57 @@ a{color:inherit;text-decoration:none}
 .programs-more{text-align:center;margin-top:48px}
 .programs-more .btn-plan{background:var(--sage);color:#fff}
 .programs-more .btn-plan:hover{background:var(--sage-deep)}
+
+/* =================== ENCOMPASS 実機写真・メニュー・料金 =================== */
+.enc-top-media.machine img{background:#fff;object-fit:contain;aspect-ratio:16/10;padding:18px;border:1px solid var(--line)}
+
+.enc-gallery{padding:60px 0 0}
+.enc-gallery ul{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.enc-gallery img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:16px;box-shadow:0 18px 40px -26px rgba(60,55,40,.6)}
+.enc-gallery-note{margin-top:16px;font-size:.78rem;color:var(--muted);text-align:center}
+
+.enc-menu{padding:100px 0 0}
+.menu-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.menu-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:34px 32px;position:relative}
+.menu-time{font-family:var(--lat);font-size:3.2rem;font-weight:600;color:var(--hot);line-height:1}
+.menu-time i{font-family:var(--sans);font-style:normal;font-size:.3em;font-weight:700;margin-left:.2em;color:var(--ink-soft)}
+.menu-card h4{font-family:var(--serif);font-size:1.25rem;font-weight:600;margin:10px 0 16px}
+.menu-desc{font-size:.9rem;color:var(--ink-soft);line-height:2}
+.menu-eg{margin-top:12px;font-size:.82rem;color:var(--sage);font-weight:500;line-height:1.9}
+.menu-ticket{margin-top:20px;padding-top:16px;border-top:1px dashed var(--line);font-size:.85rem;font-weight:700;color:var(--ink)}
+
+.enc-price{padding:90px 0 100px}
+.price-grid{display:grid;grid-template-columns:1.1fr 1fr 1.2fr;gap:20px;align-items:start}
+.price-box{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px 28px}
+.price-box.highlight{background:var(--sage-deep);color:var(--cream);border-color:var(--sage-deep)}
+.pb-title{font-family:var(--serif);font-size:1.15rem;font-weight:600;padding-bottom:14px;margin-bottom:18px;border-bottom:1px solid var(--line)}
+.price-box.highlight .pb-title{border-color:rgba(255,255,255,.25)}
+.pb-title span{display:inline-block;margin-left:.6em;background:var(--hot);color:#fff;font-family:var(--sans);font-size:.66rem;font-weight:700;padding:3px 12px;border-radius:999px;vertical-align:.15em;letter-spacing:.06em}
+.pb-amount{font-family:var(--lat);font-size:3.2rem;font-weight:600;line-height:1;color:#fff}
+.pb-amount i{font-family:var(--serif);font-style:normal;font-size:.32em;margin-left:.1em}
+.pb-sub{margin-top:10px;font-size:.88rem;color:rgba(246,241,231,.82)}
+.pb-notes{list-style:none;margin-top:18px;display:flex;flex-direction:column;gap:8px}
+.pb-notes li{position:relative;padding-left:16px;font-size:.78rem;color:rgba(246,241,231,.78);line-height:1.8}
+.pb-notes li::before{content:"※";position:absolute;left:0;top:0}
+.pb-rows div{display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:13px 0;border-bottom:1px dashed var(--line)}
+.pb-rows div:last-child{border-bottom:0}
+.pb-rows dt{font-size:.92rem;font-weight:700;white-space:nowrap}
+.pb-rows dd{font-family:var(--lat);font-size:1.6rem;font-weight:600;color:var(--sage-deep);line-height:1;text-align:right}
+.pb-rows dd i{font-family:var(--serif);font-style:normal;font-size:.5em;margin-left:.1em}
+.pb-rows.small dd{font-size:1.35rem}
+.pb-rows dd em{display:block;font-family:var(--sans);font-style:normal;font-size:.62rem;font-weight:400;color:var(--muted);margin-top:5px;letter-spacing:.02em}
+.pb-foot{margin-top:14px;font-size:.76rem;color:var(--muted)}
+.price-foot{margin-top:22px;text-align:center;font-size:.78rem;color:var(--muted)}
+.enc-cta-band .cta-tel{margin-top:20px;font-size:.82rem}
+
+@media(max-width:1000px){
+  .price-grid{grid-template-columns:1fr}
+  .menu-grid{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+  .enc-gallery ul{grid-template-columns:1fr;gap:14px}
+  .enc-gallery img{aspect-ratio:4/3}
+  .enc-menu{padding-top:72px}
+  .enc-price{padding:64px 0 72px}
+  .menu-card,.price-box{padding:26px 22px}
+}
