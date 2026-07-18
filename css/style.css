@@ -792,3 +792,9 @@ a{color:inherit;text-decoration:none}
   .kiyaku-toc{padding:24px 20px}
   .kiyaku-toc ol{columns:1}
 }
+/* 入会プランの条件注記 */
+.join-note{margin-top:16px;padding-top:14px;border-top:1px dashed rgba(255,255,255,.22);font-size:.76rem;line-height:1.85;color:rgba(255,255,255,.72)}
+.join-card.featured .join-note{border-color:var(--line);color:var(--ink-soft)}
+.join-note.caution{color:var(--hot-soft)}
+.join-card.featured .join-note.caution{color:#a95b2f}
+.price-caption a{color:#fff;text-decoration:underline}
