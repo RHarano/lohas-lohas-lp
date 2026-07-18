@@ -742,3 +742,35 @@ a{color:inherit;text-decoration:none}
 /* 明るい背景に置く .btn-plan は塗りにして視認性を確保する */
 .enc-price .who-cta .btn-plan,.prog-lead ~ * .btn-plan{background:var(--sage);color:#fff}
 .enc-price .who-cta .btn-plan:hover{background:var(--sage-deep);color:#fff}
+
+/* 製品写真は白地・見切れなしで収める */
+.enc-teaser-media.machine img{background:#fff;object-fit:contain;aspect-ratio:16/10;padding:22px;border:1px solid var(--line)}
+/* 使用シーンの写真は元データの解像度に合わせて表示幅を抑える */
+.enc-gallery ul{max-width:880px;margin:0 auto}
+.enc-gallery-note{max-width:880px;margin-left:auto;margin-right:auto}
+
+/* =================== 法定ページ =================== */
+.legal{max-width:860px;margin:0 auto;padding-bottom:100px}
+.legal-dl{border-top:1px solid var(--line)}
+.legal-dl > div{display:grid;grid-template-columns:210px 1fr;gap:24px;padding:20px 4px;border-bottom:1px solid var(--line)}
+.legal-dl dt{font-weight:700;font-size:.92rem;line-height:1.9}
+.legal-dl dd{font-size:.94rem;color:var(--ink-soft);line-height:2}
+.legal-dl dd a{color:var(--hot);font-weight:700}
+.legal-note{display:block;margin-top:6px;font-size:.8rem;color:var(--muted)}
+.legal-sec{margin-bottom:44px}
+.legal-sec h3{font-family:var(--serif);font-size:1.15rem;font-weight:600;margin-bottom:14px;padding-left:14px;border-left:3px solid var(--sage)}
+.legal-sec p{font-size:.94rem;color:var(--ink-soft);line-height:2.1;margin-bottom:12px}
+.legal-sec ul{list-style:none;margin:6px 0 0}
+.legal-sec li{position:relative;padding-left:22px;font-size:.92rem;color:var(--ink-soft);line-height:2;margin-bottom:6px}
+.legal-sec li::before{content:"";position:absolute;left:4px;top:.85em;width:7px;height:7px;border-radius:50%;background:var(--sage-soft)}
+.legal-sec .legal-dl{margin-top:14px}
+.todo{display:inline-block;background:var(--hot-soft);color:#8a4a22;font-size:.78rem;font-weight:700;padding:3px 12px;border-radius:999px;letter-spacing:.06em}
+.legal-caution{margin-top:32px;background:#FDF3EC;border:1px solid var(--hot-soft);border-radius:16px;padding:22px 24px;font-size:.86rem;color:var(--ink-soft);line-height:2}
+.legal-caution strong{color:var(--hot)}
+.footer-legal{display:flex;gap:20px;flex-wrap:wrap;justify-content:center;margin-top:22px}
+.footer-legal a{font-size:.78rem;color:rgba(246,241,231,.62);transition:.3s}
+.footer-legal a:hover{color:#fff;text-decoration:underline}
+@media(max-width:640px){
+  .legal-dl > div{grid-template-columns:1fr;gap:6px;padding:16px 4px}
+  .legal{padding-bottom:72px}
+}
