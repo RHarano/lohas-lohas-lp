@@ -1,8 +1,21 @@
+// JSが動く環境でのみアニメーション用の初期状態を適用する（JS無効時に本文が消えないように）
+document.documentElement.classList.add('js');
+
 // Scroll reveal
-const io = new IntersectionObserver((entries) => {
-  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); } });
-}, { threshold: 0.14 });
-document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+// threshold は 0、rootMargin は 0 にする。
+//  - 閾値を上げると、ビューポートより背の高い要素は可視割合が
+//    (ビューポート高 / 要素高) を超えられず、永久に発火しない
+//  - rootMargin で下端を削ると、ページ最下部の要素が発火しない
+const reveals = document.querySelectorAll('.reveal');
+if ('IntersectionObserver' in window) {
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); } });
+  }, { threshold: 0 });
+  reveals.forEach(el => io.observe(el));
+} else {
+  // 非対応環境ではアニメーションを諦めて、本文を確実に表示する
+  reveals.forEach(el => el.classList.add('is-visible'));
+}
 
 // Header scrolled state（下層ページは .static で常時ソリッド）
 const header = document.getElementById('header');
