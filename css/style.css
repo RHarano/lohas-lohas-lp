@@ -813,3 +813,38 @@ a{color:inherit;text-decoration:none}
 .join-note.caution{color:var(--hot-soft)}
 .join-card.featured .join-note.caution{color:#a95b2f}
 .price-caption a{color:#fff;text-decoration:underline}
+
+/* =================== ピラティスの入会キャンペーン =================== */
+.camp-scope{display:inline-block;margin-top:10px;font-size:.86rem;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.24);border-radius:999px;padding:7px 20px}
+.camp-scope a{color:var(--hot-soft);font-weight:700;text-decoration:underline}
+.j-sub{display:block;font-family:var(--sans);font-style:normal;font-size:.62rem;font-weight:400;opacity:.62;margin-top:5px;letter-spacing:.02em}
+
+.pilates-camp{padding:110px 0;background:var(--cream-2);border-top:1px solid var(--line)}
+.pilates-camp .section-desc strong{color:var(--hot);font-weight:700}
+.pc-timeline{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:1000px;margin:0 auto;counter-reset:pc}
+.pc-timeline li{position:relative;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:34px 28px 30px;text-align:center}
+.pc-timeline li.hit{background:var(--sage-deep);border-color:var(--sage-deep);color:var(--cream);box-shadow:var(--shadow)}
+.pc-timeline li:not(:last-child)::after{content:"";position:absolute;top:50%;right:-14px;width:0;height:0;border-left:9px solid var(--line);border-top:7px solid transparent;border-bottom:7px solid transparent;transform:translateY(-50%);z-index:2}
+.pc-flag{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--hot);color:#fff;font-size:.72rem;font-weight:700;padding:5px 18px;border-radius:999px;white-space:nowrap;letter-spacing:.04em}
+.pc-month{font-family:var(--lat);font-size:2.8rem;font-weight:600;color:var(--sage);line-height:1}
+.pc-timeline li.hit .pc-month{color:var(--hot-soft)}
+.pc-month span{font-size:.5em;margin:0 .06em;opacity:.7}
+.pc-month i{font-family:var(--sans);font-style:normal;font-size:.28em;font-weight:700;margin-left:.25em;color:var(--ink-soft);letter-spacing:.04em}
+.pc-timeline li.hit .pc-month i{color:rgba(246,241,231,.8)}
+.pc-when{font-size:.78rem;color:var(--muted);letter-spacing:.08em;margin-top:12px}
+.pc-timeline li.hit .pc-when{color:var(--sage-soft)}
+.pc-price{font-family:var(--serif);font-size:1.35rem;font-weight:600;margin-top:8px;padding-top:14px;border-top:1px dashed var(--line)}
+.pc-timeline li.hit .pc-price{color:#fff;border-color:rgba(255,255,255,.28)}
+.pc-desc{font-size:.84rem;color:var(--ink-soft);line-height:1.95;margin-top:12px}
+.pc-timeline li.hit .pc-desc{color:rgba(246,241,231,.8)}
+.price-caption.dark{color:var(--ink-soft);margin-top:34px}
+.price-caption.dark a{color:var(--hot);text-decoration:underline}
+
+@media(max-width:860px){
+  .pc-timeline{grid-template-columns:1fr;max-width:460px;gap:26px}
+  .pc-timeline li:not(:last-child)::after{top:auto;right:50%;bottom:-19px;transform:translateX(50%);border-left:7px solid transparent;border-right:7px solid transparent;border-top:9px solid var(--line);border-bottom:0}
+}
+@media(max-width:560px){
+  .pilates-camp{padding:76px 0}
+  .pc-timeline li{padding:30px 22px 26px}
+}
