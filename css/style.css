@@ -848,3 +848,72 @@ a{color:inherit;text-decoration:none}
   .pilates-camp{padding:76px 0}
   .pc-timeline li{padding:30px 22px 26px}
 }
+
+/* =================== 予約ページ =================== */
+.rsv-groups{display:flex;flex-direction:column;gap:24px;max-width:900px;margin:0 auto;padding-bottom:20px}
+.rsv-group{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:38px 40px 34px;position:relative}
+.rsv-group.member{background:var(--sage-deep);border-color:var(--sage-deep);color:var(--cream)}
+.rsv-badge{display:inline-block;background:var(--sage);color:#fff;font-size:.78rem;font-weight:700;letter-spacing:.08em;padding:6px 18px;border-radius:999px}
+.rsv-group.first .rsv-badge{background:var(--hot)}
+.rsv-group.member .rsv-badge{background:var(--cream);color:var(--sage-deep)}
+.rsv-title{font-family:var(--serif);font-size:1.5rem;font-weight:600;margin:16px 0 12px;letter-spacing:.04em}
+.rsv-desc{font-size:.92rem;color:var(--ink-soft);line-height:2.05}
+.rsv-group.member .rsv-desc{color:rgba(246,241,231,.84)}
+.rsv-desc strong{color:var(--hot);font-weight:700}
+.rsv-group.member .rsv-desc strong{color:var(--hot-soft)}
+.rsv-btns{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:26px 0 16px}
+.btn-res.sage{background:var(--sage);box-shadow:0 14px 30px -14px rgba(110,124,95,.9)}
+.btn-res.dark{background:var(--ink);box-shadow:0 14px 30px -14px rgba(44,42,36,.8)}
+.rsv-note{font-size:.78rem;color:var(--muted);line-height:1.95}
+.rsv-group.member .rsv-note{color:rgba(246,241,231,.62)}
+.rsv-note a{color:var(--hot);text-decoration:underline}
+.rsv-all{max-width:900px;margin:0 auto;padding:44px 0 100px;text-align:center;border-top:1px solid var(--line)}
+.rsv-all p{font-size:.88rem;color:var(--ink-soft);margin-bottom:18px}
+.rsv-all .btn-plan{background:var(--sage);color:#fff}
+.rsv-all .btn-plan:hover{background:var(--sage-deep)}
+@media(max-width:640px){
+  .rsv-group{padding:30px 22px 26px}
+  .rsv-btns{grid-template-columns:1fr}
+  .rsv-all{padding-bottom:72px}
+}
+
+/* =================== 料金一覧 =================== */
+.fee{padding:110px 0 0}
+.fee-block{max-width:900px;margin:0 auto 64px}
+.fee-title{font-family:var(--serif);font-size:1.35rem;font-weight:600;letter-spacing:.04em;padding-bottom:14px;border-bottom:2px solid var(--ink);display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.fee-title span{font-family:var(--lat);font-size:.8rem;font-weight:600;letter-spacing:.22em;color:var(--sage);text-transform:uppercase}
+.fee-desc{margin-top:16px;font-size:.9rem;color:var(--ink-soft);line-height:2}
+.fee-table-wrap{margin-top:18px;overflow-x:auto;border:1px solid var(--line);border-radius:14px}
+.fee-table{width:100%;border-collapse:collapse;font-size:.9rem;min-width:480px;background:#fff}
+.fee-table th{background:var(--sage-deep);color:var(--cream);font-weight:500;padding:13px 18px;text-align:left;font-size:.82rem;white-space:nowrap}
+.fee-table td{padding:14px 18px;border-top:1px solid var(--line);line-height:1.7;vertical-align:middle}
+.fee-table td:first-child{font-weight:700}
+.fee-table td:last-child{font-family:var(--lat);font-size:1.2rem;font-weight:600;color:var(--sage-deep);white-space:nowrap;text-align:right}
+.fee-table td:last-child em{display:block;font-family:var(--sans);font-style:normal;font-size:.62rem;font-weight:400;color:var(--muted);margin-top:4px}
+.fee-table td small{font-size:.72rem;font-weight:400;color:var(--muted)}
+.fee-table td.tbd{font-family:var(--sans);font-size:.9rem}
+.fee-table td.fee-more{font-weight:400;font-size:.8rem;color:var(--muted);text-align:left;font-family:var(--sans)}
+.fee-note{margin-top:16px;font-size:.78rem;color:var(--muted);line-height:1.95}
+.fee-note a{color:var(--hot);text-decoration:underline}
+.fee-caution{max-width:900px;margin:0 auto;background:#FDF3EC;border:1px solid var(--hot-soft);border-radius:16px;padding:22px 24px;font-size:.86rem;color:var(--ink-soft);line-height:2}
+.fee-caution strong{color:var(--hot)}
+.fee-caution a{color:var(--hot);font-weight:700;text-decoration:underline}
+
+.camp-lead-band{padding:100px 0}
+.camp-lead-inner{background:var(--sage-deep);color:var(--cream);border-radius:28px;padding:48px 52px;display:flex;align-items:center;justify-content:space-between;gap:36px;flex-wrap:wrap;box-shadow:var(--shadow)}
+.camp-lead-band .label{color:var(--sage-soft)}
+.camp-lead-band .cb-lead{margin-top:16px;font-size:.95rem;line-height:2.05;color:rgba(246,241,231,.85)}
+.camp-lead-band .cb-lead strong{color:var(--hot-soft);font-weight:700}
+.camp-lead-band .btn-primary{background:var(--hot);box-shadow:0 14px 30px -14px rgba(196,112,63,.9);flex-shrink:0}
+.camp-lead-band .btn-primary:hover{background:#a95b2f}
+.reserve-note strong{color:var(--hot);font-weight:700}
+.reserve-note a{color:var(--sage);font-weight:700;text-decoration:underline}
+@media(max-width:560px){
+  .fee{padding-top:76px}
+  .fee-block{margin-bottom:48px}
+  .camp-lead-band{padding:72px 0}
+  .camp-lead-inner{padding:34px 24px}
+  .camp-lead-band .btn-primary{width:100%}
+}
+.fee-table td[rowspan]{vertical-align:top;padding-top:18px}
+.fee-table td[colspan="2"]{text-align:left;font-family:var(--sans);font-size:.9rem}
