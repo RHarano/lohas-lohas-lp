@@ -932,3 +932,6 @@ a{color:inherit;text-decoration:none}
 .camp-banner .cb-yen{font-family:var(--serif);font-size:1.7rem;font-weight:600;color:var(--hot-soft);margin-left:.05em}
 .camp-banner .cb-tax{font-size:.85rem;color:rgba(246,241,231,.75);margin-left:.4em}
 .camp-banner .cb-note{margin-top:14px;font-size:.86rem;line-height:1.9;color:rgba(246,241,231,.82)}
+.enc-cta-band .cta-note{margin-top:20px;font-size:.8rem;line-height:1.9;color:rgba(246,241,231,.72)}
+.enc-cta-band .cta-note strong{color:var(--hot-soft);font-weight:700}
+.enc-cta-band .cta-note a{color:#fff;text-decoration:underline}
