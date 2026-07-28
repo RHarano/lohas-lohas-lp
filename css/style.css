@@ -317,7 +317,10 @@ a{color:inherit;text-decoration:none}
   .compare-vs{padding:0;transform:rotate(0)}
 }
 @media(max-width:1024px){
-  .nav{position:fixed;inset:0 0 0 auto;width:min(78%,320px);background:var(--sage-deep);flex-direction:column;justify-content:center;gap:30px;padding:40px;transform:translateX(100%);transition:.4s;box-shadow:-10px 0 40px rgba(0,0,0,.3)}
+  /* モバイル: ヘッダーの backdrop-filter が固定メニューの基準枠になり
+     メニューがヘッダー高に閉じ込められるため、モバイルでは無効化する */
+  .site-header,.site-header.static,.site-header.scrolled{backdrop-filter:none;-webkit-backdrop-filter:none}
+  .nav{position:fixed;inset:0 0 0 auto;width:min(78%,320px);height:100vh;height:100dvh;background:var(--sage-deep);flex-direction:column;justify-content:center;gap:30px;padding:40px;transform:translateX(100%);transition:.4s;box-shadow:-10px 0 40px rgba(0,0,0,.3);z-index:110;overflow-y:auto}
   .nav.open{transform:translateX(0)}
   .nav a{color:#fff !important;font-size:1.1rem}
   .nav-toggle{display:flex;margin-left:auto}
