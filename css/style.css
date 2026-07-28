@@ -923,3 +923,12 @@ a{color:inherit;text-decoration:none}
 .fee-subhead:first-of-type{margin-top:20px}
 .fee-subhead small{font-family:var(--sans);font-size:.72rem;font-weight:400;color:var(--muted);margin-left:.7em}
 .fee-table td[rowspan]{vertical-align:top;padding-top:16px;line-height:1.5}
+
+/* キャンペーン帯：月額1,980円を強調 */
+.camp-banner .cb-sub{margin-top:14px;font-size:.95rem;color:rgba(246,241,231,.9);letter-spacing:.02em}
+.camp-banner .cb-price{margin-top:4px;line-height:1;display:flex;align-items:baseline;flex-wrap:wrap;gap:.1em}
+.camp-banner .cb-mon{font-size:1rem;font-weight:700;color:var(--cream);margin-right:.2em}
+.camp-banner .cb-amount{font-family:var(--lat);font-size:clamp(3.4rem,8vw,5.2rem);font-weight:600;color:var(--hot-soft);letter-spacing:.01em;text-shadow:0 6px 24px rgba(0,0,0,.25)}
+.camp-banner .cb-yen{font-family:var(--serif);font-size:1.7rem;font-weight:600;color:var(--hot-soft);margin-left:.05em}
+.camp-banner .cb-tax{font-size:.85rem;color:rgba(246,241,231,.75);margin-left:.4em}
+.camp-banner .cb-note{margin-top:14px;font-size:.86rem;line-height:1.9;color:rgba(246,241,231,.82)}
